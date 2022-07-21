@@ -6,8 +6,8 @@ vector<int> primes(int n) {
             n /= i;
             prime_fact.push_back(i);
         }
-        if (n != 1)
-            prime_fact.push_back(n);
     }
+    if (n != 1)
+            prime_fact.push_back(n);
     return prime_fact;
 }
