@@ -1,3 +1,4 @@
+//Note: MOD maybe 1e9+7
 //Function To Take MOD in Summation
 int Mod_Sum(int a, int b) {
     a = (a % MOD + MOD) % MOD;
@@ -14,6 +15,7 @@ int Mod_Mul(int a, int b) {
 
 //Function To Get Fast Power
 int Fast_Power(int a, int b) {
+    // don't miss overflow
     if (b == 0)
         return 1;
     int value = Fast_Power(a, b / 2);
